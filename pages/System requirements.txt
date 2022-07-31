@@ -1,0 +1,11 @@
+System  requirements are:(prefered)
+Operating System : Windows 10 or anything higher
+Processor : intel i3 7th gen or anything higher
+
+Software requirements are:(prefered)
+Browser : Google chrome
+Code Editor(To view code) : VScode or IntelliJ IDEA
+
+NOTE : 
+1. While unzipping files makes sure all are in same folder.
+2. Start the project by opening "Home.html".

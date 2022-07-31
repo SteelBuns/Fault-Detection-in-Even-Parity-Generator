@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="posttest.css" />
+    <title>Posttest</title>
+  </head>
+  <script>
+    function fun() {
+      var num = 0;
+      var a1 = document.getElementById("correct1");
+      var a2 = document.getElementById("correct2");
+      var a3 = document.getElementById("correct3");
+      var a4 = document.getElementById("correct4");
+      var a5 = document.getElementById("correct5");
+      var w1 = document.getElementById("wrong1");
+      var w2 = document.getElementById("wrong2");
+      var w3 = document.getElementById("wrong3");
+      var w4 = document.getElementById("wrong4");
+      var w5 = document.getElementById("wrong5");
+      var w6 = document.getElementById("wrong6");
+      var w7 = document.getElementById("wrong7");
+      var w8 = document.getElementById("wrong8");
+      var w9 = document.getElementById("wrong9");
+      var w10 = document.getElementById("wrong10");
+      var w11 = document.getElementById("wrong11");
+      var w12 = document.getElementById("wrong12");
+      var w13 = document.getElementById("wrong13");
+      var w14 = document.getElementById("wrong14");
+      var w15 = document.getElementById("wrong15");
+        if (a1.checked == true) {
+        counter(++num);
+        document.getElementById("answer1").style.color = "black";
+      } else if (w1.checked == true ||w2.checked == true ||w3.checked == true){
+        document.getElementById("answer1").style.color = "red";
+        counter(num);
+      }
+      if (a2.checked == true) {
+        counter(++num);
+        document.getElementById("answer2").style.color = "black";
+      } else if (w4.checked == true ||w5.checked == true ||w6.checked == true){
+        document.getElementById("answer2").style.color = "red";
+        counter(num);
+      }
+      if (a3.checked == true) {
+        counter(++num);
+        document.getElementById("answer3").style.color = "black";
+      } else if (w7.checked == true ||w8.checked == true ||w9.checked == true){
+        document.getElementById("answer3").style.color = "red";
+        counter(num);
+      }
+      if (a4.checked == true) {
+        counter(++num);
+        document.getElementById("answer4").style.color = "black";
+      } else if (w10.checked == true ||w11.checked == true ||w12.checked == true){
+        document.getElementById("answer4").style.color = "red";
+        counter(num);
+      }
+      if (a5.checked == true) {
+        counter(++num);
+        document.getElementById("answer5").style.color = "black";
+      } else if (w13.checked == true ||w14.checked == true ||w15.checked == true){
+        document.getElementById("answer5").style.color = "red";
+        counter(num);
+      }
+    }
+    function counter(refNum) {
+      document.getElementById("countOut").innerHTML = refNum + " out of 5";
+    }
+  </script>
+
+  <body>
+    <header>
+      <nav>
+        <div class="d1">
+          <p id="pr"><a  href="references.html" title="References">References</a></p>
+                <p id="po"><a  href="posttest.html" title="Posttest">Posttest</a></p>
+                <p id="p1"><a href="Simulation.html" title="Simulation">Simulation</a></p>
+                <p id="p2"><a href="Procedure.html" title="Procedure">Procedure</a></p>
+                <p id="pre"><a  href="pretest.html" title="Pretest"> Pretest</a></p>
+                <p id="p3"><a href="Theory.html" title="Theory">Theory</a></p>
+                <p id="p4"><a href="/pages/../Aim.html" title="Aim">Aim</a></p>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <h1>jhdbjk</h1>
+    <p id="hed">
+      Detection of SA0 and SA1 faults in 3-Bit Even Parity Generator
+    </p>
+    <hr>
+    <div id="quiz">
+
+        <div class="question1">
+            If there is an SA1 fault at input wire A then the boolean function for parity bit is _____________
+        </div>
+
+        <div id="answer1">
+            <label>
+                <input type="radio" name="question1" value="a" id="wrong1">
+                a: A'⊕B
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question1" value="b" id="correct1">
+                b: B'⊕C
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question1" value="c" id="wrong2">
+                c: C
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question1" value="d" id="wrong3">
+                d: A⊕B
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question2">
+          In the case of 3-bit even even parity generator,When all the inputs are high and 'A' is stuck at ____ output is ______ .
+        </div>
+
+        <div id="answer2">
+            <label>
+                <input type="radio" name="question2" value="a" id="correct2">
+                a: 0 0
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2" value="b"  id="wrong4">
+                b: 0 1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2" value="c" id="wrong5">
+                c: 1 0
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2" value="d" id="wrong6">
+                d: None of the above
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question3">
+            How many types of parity bits are found?
+        </div>
+
+        <div id="answer3">
+            <label>
+                <input type="radio" name="question3" value="a" id="correct3">
+                a: 2
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question3" value="b" id="wrong7">
+                b: 4
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question3" value="c" id="wrong8">
+                c: 5
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question3" value="d" id="wrong9">
+                d: 3
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question4">
+          The total number of distinct multiple stuck-at faults possible in a 3-bit even parity generator are _____________
+        </div>
+
+        <div id="answer4">
+            <label>
+                <input type="radio" name="question4" value="a" id="correct4">
+                a: 35
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question4" value="b" id="wrong10">
+                b: 34
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question4" value="c" id="wrong11">
+                c: 36
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question4" value="d" id="wrong12">
+                d: 3
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question5">
+            The Even parity bit is '1' for which of the following data
+        </div>
+
+        <div id="answer5">
+            <label>
+                <input type="radio" name="question5" value="a"  id="wrong13">
+                a: 101
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question5" value="b" id="wrong14">
+                b: 110
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question5" value="c" id="correct5">
+                c: 1011
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question5" value="d" id="wrong15">
+                d: 0101
+            </label>
+            <br>
+        </div>
+        <p>&emsp;<button onclick="fun();" >Submit Quiz</button></p>
+        </b>
+        
+            <p id="countOut" >&emsp;</p>
+        
+  </body>
+</html>

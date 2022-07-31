@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pretest.css" />
+    <title>Pretest</title>
+  </head>
+  <script>
+    function fun() {
+      var num = 0;
+      var a1 = document.getElementById("correct1");
+      var a2 = document.getElementById("correct2");
+      var a3 = document.getElementById("correct3");
+      var a4 = document.getElementById("correct4");
+      var a5 = document.getElementById("correct5");
+      var w1 = document.getElementById("wrong1");
+      var w2 = document.getElementById("wrong2");
+      var w3 = document.getElementById("wrong3");
+      var w4 = document.getElementById("wrong4");
+      var w5 = document.getElementById("wrong5");
+      var w6 = document.getElementById("wrong6");
+      var w7 = document.getElementById("wrong7");
+      var w8 = document.getElementById("wrong8");
+      var w9 = document.getElementById("wrong9");
+      var w10 = document.getElementById("wrong10");
+      var w11 = document.getElementById("wrong11");
+      var w12 = document.getElementById("wrong12");
+      var w13 = document.getElementById("wrong13");
+      var w14 = document.getElementById("wrong14");
+      var w15 = document.getElementById("wrong15");
+        if (a1.checked == true) {
+        counter(++num);
+        document.getElementById("answer1").style.color = "black";
+      } else if (w1.checked == true ||w2.checked == true ||w3.checked == true){
+        document.getElementById("answer1").style.color = "red";
+        counter(num);
+      }
+      if (a2.checked == true) {
+        counter(++num);
+        document.getElementById("answer2").style.color = "black";
+      } else if (w4.checked == true ||w5.checked == true ||w6.checked == true){
+        document.getElementById("answer2").style.color = "red";
+        counter(num);
+      }
+      if (a3.checked == true) {
+        counter(++num);
+        document.getElementById("answer3").style.color = "black";
+      } else if (w7.checked == true ||w8.checked == true ||w9.checked == true){
+        document.getElementById("answer3").style.color = "red";
+        counter(num);
+      }
+      if (a4.checked == true) {
+        counter(++num);
+        document.getElementById("answer4").style.color = "black";
+      } else if (w10.checked == true ||w11.checked == true ||w12.checked == true){
+        document.getElementById("answer4").style.color = "red";
+        counter(num);
+      }
+      if (a5.checked == true) {
+        counter(++num);
+        document.getElementById("answer5").style.color = "black";
+      } else if (w13.checked == true ||w14.checked == true ||w15.checked == true){
+        document.getElementById("answer5").style.color = "red";
+        counter(num);
+      }
+    }
+    function counter(refNum) {
+      document.getElementById("countOut").innerHTML = refNum + " out of 5";
+    }
+  </script>
+
+  <body>
+    <header>
+      <nav>
+        <div class="d1">
+          <p id="pr"><a  href="references.html" title="References">References</a></p>
+                <p id="po"><a  href="posttest.html" title="Posttest">Posttest</a></p>
+                <p id="p1"><a href="Simulation.html" title="Simulation">Simulation</a></p>
+                <p id="p2"><a href="Procedure.html" title="Procedure">Procedure</a></p>
+                <p id="pre"><a  href="pretest.html" title="Pretest"> Pretest</a></p>
+                <p id="p3"><a href="Theory.html" title="Theory">Theory</a></p>
+                <p id="p4"><a href="/pages/../Aim.html" title="Aim">Aim</a></p>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <h1>jhdbjk</h1>
+    <p id="hed">
+      Detection of SA0 and SA1 faults in 3-Bit Even Parity Generator
+    </p>
+    <hr>
+    <div id="quiz">
+
+        <div class="question1">
+            How many XOR gates do we need to construct a Even parity generator?
+        </div>
+
+        <div id="answer1">
+            <label>
+                <input type="radio" name="question1" value="a" id="wrong1">
+                a: 3
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question1" value="b" id="wrong2">
+                b: 1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question1" value="c" id="correct1">
+                c: 2
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question1" value="d" id="wrong3">
+                d: 4
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question2">
+            What is the boolean expression for the Even parity generator?
+        </div>
+
+        <div id="answer2">
+            <label>
+                <input type="radio" name="question2" value="a" id="wrong4">
+                a: A⊕B⊕C'
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2" value="b" id="correct2">
+                b: A⊕B⊕C
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2" value="c" id="wrong5">
+                c: A⊕B+B⊕C+A⊕C
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2" value="d" id="wrong6">
+                d: A+B+C
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question3">
+          When the signal 101 is being transferred and it is received as 011,which of the following is true?
+        </div>
+
+        <div id="answer3">
+            <label>
+                <input type="radio" name="question3" value="a" id="wrong7">
+                a: Error can be detected using 3-bit odd parity generator
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question3" value="b" id="wrong8">
+                b: Error can be detected using 3-bit even parity generator
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question3" value="c" id="wrong9">
+                c: Both a and b are correct
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question3" value="d" id="correct3">
+                d: Error cannot be detected
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question4">
+            The odd parity output of decimal number 8 is _____________
+        </div>
+
+        <div id="answer4">
+            <label>
+                <input type="radio" name="question4" value="a" id="correct4">
+                a: 0
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question4" value="b" id="wrong10">
+                b: 1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question4" value="c" id="wrong11">
+                c: 110
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question4" value="d" id="wrong12">
+                d: 1000
+            </label>
+            <br>
+        </div>
+        <br>
+        <div class="question5">
+            Which gates are used for constructing odd parity generator?
+        </div>
+
+        <div id="answer5">
+            <label>
+                <input type="radio" name="question5" value="a" id="wrong13">
+                a: Ex-OR & NOT gates
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question5" value="b" id="wrong14">
+                b: Ex-OR & AND gates
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question5" value="c" id="correct5">
+                c: Ex-OR gates
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question5" value="d" id="wrong15">
+                d: NAND & NOR gates
+            </label>
+            <br>
+        </div>
+        <p>&emsp;<button onclick="fun();" >Submit Quiz</button></p>
+        </b>
+        
+        <p id="countOut" >    &emsp;</p>
+        
+  </body>
+</html>
